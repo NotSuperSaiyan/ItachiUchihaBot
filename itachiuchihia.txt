@@ -1,0 +1,80 @@
+const Discord = require("discord.js")
+
+const { Client, Intents } = require('discord.js');
+
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+
+client.on("ready", () => {
+	console.log("Bot Ready To Use");
+})
+
+client.on("message", msg => {
+
+	if(msg.content === "naruto"){
+		msg.reply("There is no mean of creating multiple heads if there is nothing inside");
+	}
+	else if(msg.content === "sasuke"){
+		msg.reply("I'm Better You Know");
+	}
+	else if(msg.content === "crow" || msg.content === "crows"){
+		msg.reply("I'm Their Boss");
+	}
+	else if(msg.content === "anime"){
+		msg.reply("I'm Best Character");
+	}
+	else if(msg.content === "lol" || msg.content === "lmao"){
+		msg.reply("That's Not Funny Kid");
+	}
+	else if(msg.content === "invite itachi"){
+		msg.reply("Check My Profile, Kid");
+	}
+	else if(msg.content === "ur mom"){
+		msg.reply("I'm Your Dad, Kid");
+	}
+	else if(msg.content === "+summon itachi"){
+		msg.reply("I'M HERE KID, WHY YOU SUMMONED ME. NOW I WILL KILL YOU. *kills*");
+	}
+	else if(msg.content === "goku"){
+		msg.reply("We Were Good Friends, But Then That Stupid Vegeta Became Is Best Friend. Time To Kill Him");
+	}
+	else if(msg.content === "notsupersaiyan" || msg.content === "notssj"){
+		msg.reply("Yep He's The One Who Created Me");
+	}
+	else if(msg.content === "what" || msg.content === "wot" || msg.content === "wut" || msg.content === "woat"){
+		msg.reply("Ask Sasuke, He Is The Topper Of His Class");
+	}
+	else if(msg.content === "ban" || msg.content === "kick"){
+		msg.reply("I Will Kill Him Instead");
+	}
+	else if(msg.content === "+summon goku"){
+		msg.reply("Summoned Goku.\nGoku: KAAAAAAA\nMEEEEEEE\nHAAAAAAAAA\nMEEEEEEEEE\n....\nHAAAAAAAAAAAAAAAAAAAAAAA\nAfterWord: You Died");
+	}
+	else if(msg.content === "+summon sasuke"){
+		msg.reply("Summoned Sasuke Succesfully\nSasuke:'Scary Looking Cat'");
+	}
+	else if(msg.content === "rip"){
+		msg.reply("I Was The One To Kill :joy:");
+	}
+	else if(msg.content === "cartoon"){
+		msg.reply("You Guys Watch Cartoon In 2022? Watch Anime or else");
+	}
+	else if(msg.content === "maths"){
+		msg.reply("Wait You Mean YOU SIT FOR 10 HOURS JUST TO WRITE SOME STUPID SYMBOLS");
+	}
+	else if (msg.content === "dumb"){
+		msg.reply("You Are");
+	}
+	else if (msg.content === "+summon ur mom"){
+		msg.reply("You Summoned Ur Mom. She Found You Playing Games And Took Ur Mobile\n:joy: :joy: :joy");
+	}
+  else if(msg.content === "itachi summon crows"){
+    msg.reply("*Itachi Summoned Crows*, Time To Die")
+  }
+  else if(msg.content === "nishil"){
+    msg.reply("You Mean My Biggest Fan?")
+  }
+
+
+})
+
+client.login(process.env.TOKEN)
